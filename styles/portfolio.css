@@ -6,9 +6,15 @@
     "wdth" 100;
 }
 body{
-        width: 1600px;
+        height: 100vh;
 }
-/* shared style */
+main section{
+        margin-top: 130px;
+        margin-bottom: 130px;
+}
+
+
+/* shared styles */
 .text-primary{
         color: #FD6E0A;
 }
@@ -27,19 +33,45 @@ body{
 .dark-3{
         color: #757575;
 }
+.secondary-bg{
+        background-color: #FFF8F3;
+}
+.section-title{
+        color: #181818;
+        font-size: 35px;
+        font-weight: bold;
+}
+.section-description{
+        color: #757575;
+        font-size: 18px;
+        font-weight: 400;
+}
+.common-st{
+        color:#757575 ;
+        font-size: 20px;
+        font-weight: 400;
+}
+.text-bold{
+        color: #474747;
+        font-size: 20px;
+        font-weight: bold;
+}
 
 /* header styles */
 .banner-head{
           background-image: url('../images/developer.png'), url('../images/header_bg.png');
         background-repeat: no-repeat;
         background-position: top left,bottom right;
+        /* margin-top:10px ; */
+        
 }
 
 /* nav style  */
 nav{
         display: flex;
         justify-content: space-between;
-        margin: 50px 200px;
+        margin: 0 200px;
+        
 }
 nav ul li{
         list-style: none;
@@ -66,10 +98,13 @@ nav ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 100px;
+         
 }
 .banner-content{
         width: 500px;
-        margin: 0 200px;
+        margin: 30px 200px;
+       
 }
 .banner-greetings{
         font-weight: 600;
@@ -96,5 +131,39 @@ nav ul {
 
 .banner-img img{
         width: 500px;
+        margin-right: 50px;
         
+}
+/* about styles */
+main{
+         max-width: 1140px;
+        margin: 0 auto;
+
+}
+.about{
+       
+        text-align: center;
+        border-radius: 10px;
+        padding: 50px;
+}
+.about-items{
+        display: flex;
+        justify-content: space-around;
+}
+
+/* skills styles */
+.skill-container{
+        text-align: center;
+}
+.skills{
+        display: flex;
+        margin-top: 50px;
+        text-align: left;
+        gap: 24px;
+}
+.skill-item{
+        background-color:#FFFFFF;
+        padding: 30px;
+        box-shadow: 0 6px 50px 0 #000000;
+        border-radius: 5px;
 }
