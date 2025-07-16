@@ -234,3 +234,66 @@ textarea{
 footer a {
         margin-right: 20px;
 }
+
+/* responsive design */
+.hide{
+        display: none;
+}
+@media screen and (max-width:576px){
+        .skills,nav,ul,
+        .about-items{
+                flex-direction: column;
+        }
+        nav,ul{
+                justify-content: center;
+                align-items: center;
+        }
+        .banner{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+        }
+        .banner-content{
+                width: 100%;
+        }
+        .banner-btn{
+                margin-bottom: 10px;
+        }
+        .banner-head{
+                background-image: none;
+        }
+        .banner-img img{
+                width: 100%;
+        }
+
+        .banner-content{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+        .banner-content .btn-primary{
+                display: block;
+        }
+        ul{
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+        }
+        footer{
+                flex-direction: column;
+                padding: 20px;
+        }
+        footer input[type="text"],input[type="email"],textarea{
+                width: calc((100% - 40px));
+        }
+        .resume-container{
+                flex-direction: column;
+        }
+        .about{
+                padding: 20px;
+        }
+        
+        }
+        
+
